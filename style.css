@@ -548,19 +548,22 @@ img {
   }
 }
 
+/* Dynamic Island */
 .phone-notch {
-  width: 90px;
-  height: 26px;
-  background: #0d0d1a;
-  border-radius: 0 0 18px 18px;
-  margin: 0 auto;
+  width: 96px;
+  height: 28px;
+  background: #000;
+  border-radius: 20px;
+  margin: 10px auto 0;
   position: relative;
   z-index: 10;
+  box-shadow: 0 0 0 1.5px rgba(255, 255, 255, 0.06),
+    0 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 .phone-screen {
-  padding: 0 14px 14px;
-  height: calc(100% - 26px);
+  padding: 4px 14px 14px;
+  height: calc(100% - 48px);
   display: flex;
   flex-direction: column;
 }
