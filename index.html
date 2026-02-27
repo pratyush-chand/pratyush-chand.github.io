@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pratyush Chand — iOS Developer</title>
+    <meta name="description"
+        content="Portfolio of Pratyush Chand, iOS Developer specialising in SwiftUI, UIKit, and Combine. Currently at Lumen Technologies (Quantum Fiber)." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Animated background orbs -->
+    <div class="bg-canvas" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- ────────────── NAV ────────────── -->
+    <nav class="glass-nav" id="navbar">
+        <div class="nav-inner">
+            <span class="nav-logo">PC<span class="dot">.</span></span>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ────────────── HERO ────────────── -->
+    <header class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge glass-badge reveal">
+                <span class="status-dot"></span>
+                Available for new opportunities
+            </div>
+            <h1 class="hero-name reveal">
+                Pratyush<br /><span class="gradient-text">Chand</span>
+            </h1>
+            <p class="hero-title reveal">iOS Developer</p>
+            <p class="hero-sub reveal">
+                Crafting <strong>SwiftUI</strong> &amp; <strong>UIKit</strong> experiences<br />
+                that delight millions of users.
+            </p>
+            <div class="hero-actions reveal">
+                <a href="#projects" class="btn btn-primary">View Work</a>
+                <a href="#contact" class="btn btn-glass">Contact Me</a>
+            </div>
+            <div class="hero-stats reveal">
+                <div class="stat-card glass-card-sm">
+                    <span class="stat-num">2.5+</span>
+                    <span class="stat-label">Years Exp.</span>
+                </div>
+                <div class="stat-card glass-card-sm">
+                    <span class="stat-num">iOS</span>
+                    <span class="stat-label">Platform Focus</span>
+                </div>
+                <div class="stat-card glass-card-sm">
+                    <span class="stat-num">Swift</span>
+                    <span class="stat-label">Core Language</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual reveal">
+            <div class="phone-mockup">
+                <div class="phone-frame">
+                    <div class="phone-notch"></div>
+                    <div class="phone-screen">
+                        <div class="app-ui">
+                            <div class="app-status-bar">
+                                <span>9:41</span>
+                                <span>●●●</span>
+                            </div>
+                            <div class="app-header-area">
+                                <div class="app-weather-icon">☀️</div>
+                                <div class="app-temp">24°</div>
+                                <div class="app-loc">Bengaluru</div>
+                            </div>
+                            <div class="app-glass-card">
+                                <div class="app-card-label">Feels Like</div>
+                                <div class="app-card-val">26°</div>
+                            </div>
+                            <div class="app-bottom-row">
+                                <div class="app-mini-card">🌧️ 12%</div>
+                                <div class="app-mini-card">💨 14 km/h</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="phone-reflection"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ────────────── ABOUT ────────────── -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-chip">About</span>
+                <h2 class="section-title">Who I Am</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text glass-card reveal">
+                    <p>
+                        I'm an <strong>iOS Developer</strong> specialising in <strong>SwiftUI</strong>,
+                        <strong>UIKit</strong>, and <strong>Combine</strong>, currently building and modernising the
+                        Quantum Fiber app at <strong>Lumen Technologies</strong>.
+                    </p>
+                    <p>
+                        I thrive at the intersection of engineering rigour and beautiful design, from architecting
+                        robust IoT workflows to achieving pixel-perfect Figma-to-code fidelity. I was handpicked by
+                        leadership to pivot from Salesforce Development into Mobile Engineering, a testament to my drive
+                        for learning and proactive problem-solving.
+                    </p>
+                    <p>
+                        Off the screen, you'll find me on a motorcycle. There's something about the open road that
+                        clears the mind just as well as a clean refactor.
+                    </p>
+                    <div class="about-tags">
+                        <span class="tag">SwiftUI Enthusiast</span>
+                        <span class="tag">🏍️ Motorcyclist</span>
+                        <span class="tag">Design-Minded Engineer</span>
+                        <span class="tag">NGO Volunteer</span>
+                    </div>
+                </div>
+                <div class="about-sidebar">
+                    <div class="info-card glass-card reveal">
+                        <div class="info-row">
+                            <span class="info-icon">📍</span>
+                            <div>
+                                <div class="info-label">Location</div>
+                                <div class="info-val">Bengaluru, India</div>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-icon">🏢</span>
+                            <div>
+                                <div class="info-label">Company</div>
+                                <div class="info-val">Lumen Technologies</div>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-icon">🎓</span>
+                            <div>
+                                <div class="info-label">Education</div>
+                                <div class="info-val">B.Tech in IT, CGPA 8.29</div>
+                            </div>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-icon">📧</span>
+                            <div>
+                                <div class="info-label">Email</div>
+                                <div class="info-val"><a
+                                        href="mailto:pratyushchand.work@gmail.com">pratyushchand.work@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-card glass-card reveal">
+                        <a href="https://linkedin.com/in/pratyushchand" target="_blank" rel="noopener"
+                            class="social-link" id="social-linkedin">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/pratyush-lumen" target="_blank" rel="noopener" class="social-link"
+                            id="social-github">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ────────────── EXPERIENCE ────────────── -->
+    <section class="section" id="experience">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-chip">Experience</span>
+                <h2 class="section-title">Where I've Worked</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card glass-card">
+                        <div class="job-header">
+                            <div>
+                                <h3 class="job-company">Lumen Technologies <span class="job-product">(Quantum
+                                        Fiber)</span></h3>
+                                <p class="job-role">Software Development Engineer - iOS</p>
+                            </div>
+                            <div class="job-meta">
+                                <span class="job-date">Sept 2023 – Present</span>
+                                <span class="job-location">📍 Bengaluru, KA</span>
+                            </div>
+                        </div>
+                        <ul class="job-list">
+                            <li>
+                                <span class="list-icon">🚀</span>
+                                <p>Key player in the <strong>Lazy Loading redesign</strong> of the login module, which
+                                    reduced login
+                                    latency by <strong class="highlight">75%</strong> and boosted App Store ratings by
+                                    <strong class="highlight">0.4 ★</strong>.
+                                </p>
+                            </li>
+                            <li>
+                                <span class="list-icon">📡</span>
+                                <p>Engineered complex <strong>IoT workflows</strong> for WiFi Pod management
+                                    (onboarding, swapping, removal), ensuring seamless hardware-software sync for
+                                    thousands of users.</p>
+                            </li>
+                            <li>
+                                <span class="list-icon">🎨</span>
+                                <p>Collaborated with Product Designers in <strong>Figma</strong>, achieving <strong
+                                        class="highlight">100% design-to-code fidelity</strong> for modern UI
+                                    prototypes.</p>
+                            </li>
+                            <li>
+                                <span class="list-icon">🔐</span>
+                                <p>Architected <strong>Parental Controls</strong> and <strong>Guest Password</strong>
+                                    security features; optimised API integration and state management with
+                                    <strong>Combine</strong> &amp; RxSwift.
+                                </p>
+                            </li>
+                            <li>
+                                <span class="list-icon">⭐</span>
+                                <p>Selected by leadership to pivot from Salesforce Development to Mobile Engineering,
+                                    recognised for rapid learning and proactive problem-solving.</p>
+                            </li>
+                        </ul>
+                        <div class="job-tags">
+                            <span class="tech-tag">SwiftUI</span>
+                            <span class="tech-tag">UIKit</span>
+                            <span class="tech-tag">Combine</span>
+                            <span class="tech-tag">RxSwift</span>
+                            <span class="tech-tag">MVVM</span>
+                            <span class="tech-tag">IoT</span>
+                            <span class="tech-tag">Figma</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ────────────── PROJECTS ────────────── -->
+    <section class="section" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-chip">Projects</span>
+                <h2 class="section-title">Things I've Built</h2>
+            </div>
+            <div class="projects-grid">
+
+                <!-- Glasscast -->
+                <div class="project-card glass-card reveal featured">
+                    <div class="project-glow glow-blue"></div>
+                    <div class="project-header">
+                        <div class="project-icon" aria-label="Glasscast">🌤️</div>
+                        <div class="project-badges">
+                            <span class="badge badge-featured">Featured</span>
+                            <span class="badge badge-personal">Personal</span>
+                        </div>
+                    </div>
+                    <h3 class="project-name">Glasscast</h3>
+                    <p class="project-desc">A dynamic <strong>weather app</strong> featuring a liquid glassmorphism
+                        design system that adapts seamlessly to system themes. Integrated Supabase for real-time data
+                        syncing and WidgetKit for interactive home screen widgets.</p>
+                    <ul class="project-highlights">
+                        <li>Liquid glassmorphism design system, which adapts to light &amp; dark modes</li>
+                        <li>Real-time data sync via <strong>Supabase</strong></li>
+                        <li>Interactive home screen widgets using <strong>WidgetKit</strong></li>
+                    </ul>
+                    <div class="project-stack">
+                        <span class="tech-tag">SwiftUI</span>
+                        <span class="tech-tag">Supabase</span>
+                        <span class="tech-tag">WidgetKit</span>
+                    </div>
+                </div>
+
+                <!-- YouTube Analyzer -->
+                <div class="project-card glass-card reveal">
+                    <div class="project-glow glow-red"></div>
+                    <div class="project-header">
+                        <div class="project-icon" aria-label="YouTube Analyzer">📊</div>
+                        <div class="project-badges">
+                            <span class="badge badge-personal">Personal</span>
+                        </div>
+                    </div>
+                    <h3 class="project-name">YouTube Data Analyzer</h3>
+                    <p class="project-desc">A web tool to analyse YouTube playlist data, calculates total duration and
+                        average video length using the YouTube Data API with efficient pagination for large playlists.
+                    </p>
+                    <div class="project-stack">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">REST APIs</span>
+                        <span class="tech-tag">JSON</span>
+                    </div>
+                </div>
+
+                <!-- Face Recognition -->
+                <div class="project-card glass-card reveal">
+                    <div class="project-glow glow-purple"></div>
+                    <div class="project-header">
+                        <div class="project-icon" aria-label="Face Recognition">🤖</div>
+                        <div class="project-badges">
+                            <span class="badge badge-academic">Academic</span>
+                        </div>
+                    </div>
+                    <h3 class="project-name">Face Recognition System</h3>
+                    <p class="project-desc">An automated identity verification system developed using Python and OpenCV,
+                        focused on algorithmic accuracy and processing speed for real-world use cases.</p>
+                    <div class="project-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">Computer Vision</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ────────────── SKILLS ────────────── -->
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-chip">Skills</span>
+                <h2 class="section-title">Tech Stack</h2>
+            </div>
+            <div class="skills-grid">
+
+                <div class="skill-group glass-card reveal">
+                    <div class="skill-group-icon">⌨️</div>
+                    <h3 class="skill-group-title">Languages</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill primary">Swift</span>
+                        <span class="skill-pill">Kotlin</span>
+                        <span class="skill-pill">Java</span>
+                        <span class="skill-pill">JavaScript</span>
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill muted">Apex</span>
+                    </div>
+                </div>
+
+                <div class="skill-group glass-card reveal">
+                    <div class="skill-group-icon">📱</div>
+                    <h3 class="skill-group-title">iOS Technologies</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill primary">SwiftUI</span>
+                        <span class="skill-pill primary">UIKit</span>
+                        <span class="skill-pill">MVVM</span>
+                        <span class="skill-pill">Combine</span>
+                        <span class="skill-pill">XCTest</span>
+                        <span class="skill-pill">Core Data</span>
+                        <span class="skill-pill">SwiftData</span>
+                    </div>
+                </div>
+
+                <div class="skill-group glass-card reveal">
+                    <div class="skill-group-icon">🛠️</div>
+                    <h3 class="skill-group-title">Developer Tools</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill primary">Xcode</span>
+                        <span class="skill-pill">Git</span>
+                        <span class="skill-pill">Jira</span>
+                        <span class="skill-pill">Jenkins</span>
+                        <span class="skill-pill">Splunk</span>
+                        <span class="skill-pill">OAuth 2</span>
+                        <span class="skill-pill">Figma</span>
+                        <span class="skill-pill">Salesforce</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ────────────── EDUCATION ────────────── -->
+    <section class="section" id="education">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-chip">Education</span>
+                <h2 class="section-title">Academic Background</h2>
+            </div>
+            <div class="edu-card glass-card reveal">
+                <div class="edu-icon">🎓</div>
+                <div class="edu-details">
+                    <h3 class="edu-school">Techno Main Salt Lake</h3>
+                    <p class="edu-degree">Bachelor of Technology in Information Technology</p>
+                    <div class="edu-meta">
+                        <span class="edu-location">📍 Kolkata, WB</span>
+                        <span class="edu-date">Aug 2019 – July 2023</span>
+                        <span class="edu-cgpa">CGPA: <strong>8.29</strong></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="section-header reveal" style="margin-top:3rem">
+                <span class="section-chip">Certifications</span>
+                <h2 class="section-title" style="font-size:1.6rem">Courses &amp; Certs</h2>
+            </div>
+            <div class="certs-grid">
+                <div class="cert-card glass-card-sm reveal">
+                    <span class="cert-icon">☕</span>
+                    <span class="cert-name">Java Programming</span>
+                    <span class="cert-provider">Coursera</span>
+                </div>
+                <div class="cert-card glass-card-sm reveal">
+                    <span class="cert-icon">☁️</span>
+                    <span class="cert-name">AWS Cloud Practitioner</span>
+                    <span class="cert-provider">Coursera</span>
+                </div>
+                <div class="cert-card glass-card-sm reveal">
+                    <span class="cert-icon">🔒</span>
+                    <span class="cert-name">Cybersecurity</span>
+                    <span class="cert-provider">Coursera</span>
+                </div>
+                <div class="cert-card glass-card-sm reveal">
+                    <span class="cert-icon">🌿</span>
+                    <span class="cert-name">Git</span>
+                    <span class="cert-provider">Coursera</span>
+                </div>
+                <div class="cert-card glass-card-sm reveal">
+                    <span class="cert-icon">🎨</span>
+                    <span class="cert-name">Fine Arts Diploma (5-Year)</span>
+                    <span class="cert-provider">Painting</span>
+                </div>
+                <div class="cert-card glass-card-sm reveal">
+                    <span class="cert-icon">🖼️</span>
+                    <span class="cert-name">Figma UI/UX Essentials</span>
+                    <span class="cert-provider">Design</span>
+                </div>
+            </div>
+
+            <!-- Interests -->
+            <div class="interests-row reveal">
+                <div class="interest-chip">📈 Corporate Finance</div>
+                <div class="interest-chip">🌿 Ecosystem Dynamics</div>
+                <div class="interest-chip">🏍️ Motorcycling</div>
+                <div class="interest-chip">🎨 Fine Arts &amp; Painting</div>
+                <div class="interest-chip">🖥️ UI/UX Design</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ────────────── LEADERSHIP ────────────── -->
+    <section class="section" id="leadership">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-chip">Leadership</span>
+                <h2 class="section-title">Giving Back</h2>
+            </div>
+            <div class="volunteer-card glass-card reveal">
+                <div class="vol-icon">❤️</div>
+                <div class="vol-details">
+                    <h3 class="vol-title">NGO Volunteer - Mathematics Tutor</h3>
+                    <p class="vol-location">📍 Bengaluru, KA</p>
+                    <ul class="vol-list">
+                        <li>Volunteers every Saturday to teach <strong>Class 5 Mathematics</strong> to 16
+                            underprivileged children.</li>
+                        <li>Develops simplified lesson plans and conducts <strong>quarterly assessments</strong> to
+                            track student progress.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ────────────── CONTACT ────────────── -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-chip">Contact</span>
+                <h2 class="section-title">Let's Connect</h2>
+            </div>
+            <div class="contact-card glass-card reveal">
+                <p class="contact-desc">I'm always open to exciting opportunities, collaborations, or just a great
+                    conversation about iOS development and design. Drop me a line!</p>
+                <div class="contact-links">
+                    <a href="mailto:pratyushchand.work@gmail.com" class="contact-link" id="contact-email">
+                        <span class="contact-link-icon">✉️</span>
+                        <span>pratyushchand.work@gmail.com</span>
+                    </a>
+                    <a href="tel:+918877993590" class="contact-link" id="contact-phone">
+                        <span class="contact-link-icon">📞</span>
+                        <span>+91 88779 93590</span>
+                    </a>
+                    <a href="https://linkedin.com/in/pratyushchand" target="_blank" rel="noopener" class="contact-link"
+                        id="contact-linkedin">
+                        <span class="contact-link-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                        </span>
+                        <span>linkedin.com/in/pratyushchand</span>
+                    </a>
+                    <a href="https://github.com/pratyush-lumen" target="_blank" rel="noopener" class="contact-link"
+                        id="contact-github">
+                        <span class="contact-link-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                                <path
+                                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                            </svg>
+                        </span>
+                        <span>github.com/pratyush-lumen</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ────────────── FOOTER ────────────── -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">Designed &amp; built by <strong>Pratyush Chand</strong> · 2026</p>
+            <p class="footer-sub">SwiftUI Dev by day, Motorcyclist by soul</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
