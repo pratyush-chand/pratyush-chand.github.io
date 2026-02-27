@@ -550,20 +550,17 @@ img {
 
 /* Dynamic Island */
 .phone-notch {
-  width: 96px;
-  height: 28px;
+  width: 72px;
+  height: 20px;
   background: #000;
-  border-radius: 20px;
-  margin: 10px auto 0;
-  position: relative;
-  z-index: 10;
-  box-shadow: 0 0 0 1.5px rgba(255, 255, 255, 0.06),
-    0 2px 8px rgba(0, 0, 0, 0.6);
+  border-radius: 14px;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06), 0 2px 6px rgba(0, 0, 0, 0.7);
 }
 
 .phone-screen {
-  padding: 4px 14px 14px;
-  height: calc(100% - 48px);
+  padding: 0 14px 14px;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -576,11 +573,16 @@ img {
 }
 
 .app-status-bar {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
   font-size: 9px;
   color: rgba(255, 255, 255, 0.6);
-  padding: 6px 2px;
+  padding: 10px 4px 4px;
+}
+
+.app-status-bar span:last-child {
+  text-align: right;
 }
 
 .app-header-area {
@@ -614,21 +616,21 @@ img {
 .app-glass-card {
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 16px;
+  border-radius: 12px;
   backdrop-filter: blur(12px);
-  padding: 12px 16px;
+  padding: 7px 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .app-card-label {
-  font-size: 0.6rem;
+  font-size: 0.55rem;
   color: rgba(255, 255, 255, 0.5);
 }
 
 .app-card-val {
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   font-weight: 600;
   color: #fff;
 }
@@ -1128,6 +1130,7 @@ img {
   align-items: flex-start;
   gap: 24px;
   padding: 32px 36px;
+  margin-bottom: 2rem;
 }
 
 .edu-icon {
