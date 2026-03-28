@@ -212,7 +212,7 @@ function initTypewriter() {
   const titleEl = document.querySelector('.hero-title');
   if (!titleEl) return;
 
-  const words = ['iOS Developer', 'SwiftUI Engineer', 'UI/UX Enthusiast', 'SwiftUI Craftsman', 'Motorhead'];
+  const words = ['iOS Developer', 'Founder', 'SwiftUI Engineer', 'UI/UX Enthusiast', 'SwiftUI Craftsman', 'Motorhead', 'Product Manager'];
   let wordIndex = 0;
   let charIndex = 0;
   let isDeleting = false;

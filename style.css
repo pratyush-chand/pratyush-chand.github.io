@@ -426,6 +426,24 @@ img {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-bottom: 20px;
+  min-height: 1.6em;
+  display: flex;
+  align-items: center;
+}
+
+.hero-title::after {
+  content: '';
+  width: 2px;
+  height: 1.2em;
+  background: var(--accent);
+  margin-left: 8px;
+  display: inline-block;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 .hero-sub {
@@ -590,6 +608,7 @@ img {
   flex-direction: column;
   align-items: center;
   padding: 8px 0 4px;
+  margin-top: 40px;
 }
 
 .app-weather-icon {
@@ -638,7 +657,7 @@ img {
 .app-bottom-row {
   display: flex;
   gap: 8px;
-  margin-top: auto;
+  margin-top: 12px;
 }
 
 .app-mini-card {
@@ -801,22 +820,10 @@ img {
 
 .timeline-item {
   position: relative;
-  padding-left: 40px;
-}
-
-.timeline-dot {
-  position: absolute;
-  left: 0;
-  top: 34px;
-  width: 12px;
-  height: 12px;
-  background: var(--accent);
-  border-radius: 50%;
-  box-shadow: 0 0 0 4px rgba(10, 132, 255, 0.2);
 }
 
 .timeline-card {
-  padding: 32px 36px;
+  padding: 20px 24px;
 }
 
 .job-header {
@@ -925,8 +932,8 @@ img {
    ========================================== */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
 }
 
 .project-card {
@@ -963,6 +970,14 @@ img {
 
 .glow-purple {
   background: radial-gradient(circle, rgba(94, 92, 230, 0.5) 0%, transparent 70%);
+}
+
+.glow-green {
+  background: radial-gradient(circle, rgba(48, 209, 88, 0.5) 0%, transparent 70%);
+}
+
+.glow-orange {
+  background: radial-gradient(circle, rgba(255, 159, 10, 0.5) 0%, transparent 70%);
 }
 
 .project-header {
@@ -1016,6 +1031,30 @@ img {
   font-weight: 700;
   margin-bottom: 10px;
   color: var(--text-primary);
+  transition: var(--transition-fast);
+}
+
+.project-name a {
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.project-name a:hover {
+  color: var(--accent);
+}
+
+.project-name a::after {
+  content: '↗';
+  font-size: 0.9rem;
+  opacity: 0.5;
+  transition: var(--transition-fast);
+}
+
+.project-name a:hover::after {
+  opacity: 1;
+  transform: translate(2px, -2px);
 }
 
 .project-desc {
@@ -1389,6 +1428,10 @@ img {
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
   .section {
     padding: 64px 0;
   }
@@ -1461,7 +1504,7 @@ img {
   }
 
   .timeline-item {
-    padding-left: 16px;
+    padding-left: 0;
   }
 
   .timeline-dot {
