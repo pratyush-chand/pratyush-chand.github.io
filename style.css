@@ -691,7 +691,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 340px;
   gap: 28px;
-  align-items: start;
+  align-items: stretch;
 }
 
 .about-text {
@@ -736,6 +736,23 @@ img {
 
 .info-card {
   margin-bottom: 16px;
+}
+
+@media (min-width: 1025px) {
+  .about-sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 16px;
+  }
+  
+  .about-sidebar .info-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
 }
 
 .info-row {
