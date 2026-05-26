@@ -542,8 +542,8 @@ img {
 }
 
 .phone-frame {
-  width: 220px;
-  height: 440px;
+  width: 250px;
+  height: 500px;
   background: linear-gradient(160deg, #1c1c2e 0%, #0d0d1a 100%);
   border-radius: 44px;
   border: 1.5px solid rgba(255, 255, 255, 0.15);
@@ -608,7 +608,7 @@ img {
   flex-direction: column;
   align-items: center;
   padding: 8px 0 4px;
-  margin-top: 40px;
+  margin-top: 70px;
 }
 
 .app-weather-icon {
@@ -677,7 +677,7 @@ img {
   bottom: -60px;
   left: 50%;
   transform: translateX(-50%);
-  width: 140px;
+  width: 170px;
   height: 30px;
   background: rgba(10, 132, 255, 0.2);
   filter: blur(20px);
